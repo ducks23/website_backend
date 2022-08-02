@@ -1,9 +1,9 @@
 import stripe
-
+import os
 
 class Stripe:
 
-    stripe.api_key = "sk_test_51LMHjiF7c1yPvv8sT4ErLcCHwEgz6zARyXYFm9ymkyUanFhIwmPyP26R8xTzigyyF3Kwujs1BbEm6k5dpzraTVWz00GFQuk9KC"
+    stripe.api_key = os.environ['STRIPE_API_KEY']
 
     def create_customer(self, name, address, email):
         resp = stripe.Customer.create(name=name, address=address, email=email)
