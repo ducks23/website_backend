@@ -1,6 +1,7 @@
 # to deploy
 ```
 export STRIPE_API_KEY="your_test_key"
+export MAIL_GUN_KEY="your_mailgun_key"
 python3 manage.py runserver
 ```
 
