@@ -10,5 +10,5 @@ python3 manage.py runserver
 
 ## API Usage
 ```
-curl -X POST -H "Content-Type: application/json"  -d '{"number": 2, "cvc": 3, "exp_month": 3, "exp_year": 2023}' http://127.0.0.1:8000/create_token
-```
+ curl -X POST -H "Content-Type: application/json"  -d '{"number": 44441111222244444, "cvc": 333, "exp_month": 3, "exp_year": 2023}' http://127.0.0.1:8000/create_token
+ ```
